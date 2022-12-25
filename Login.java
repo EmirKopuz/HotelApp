@@ -57,7 +57,7 @@ public class Login extends DbConnection {
             String manager_username = scanner.next();
             System.out.print("Yönetici şifrenizi giriniz : ");
             String manager_password = scanner.next();     //yöneticinin giriş bilgilerinin alınması
-            for (Management management : managers) {
+            for (Management management : managers) {      //managers arraylistindeki Management türündeki nesneleri sırasıyla kullanıyoruz
             
                 if (manager_username.equals(management.getManager_username()) && manager_password.equals(management.getManager_password())) {  
                    //yöneticinin giriş bilgilerinin doğruluk karşılaştırması
