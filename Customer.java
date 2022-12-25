@@ -1,21 +1,21 @@
 public class Customer{
     private  String customer_name, customer_surname, customer_gender, customer_country,customer_uniqueID;
     private  int customer_roomnumber, customer_age,customer_plan,customer_spendamount;
-
+    //değişkenlerimi private olarak tanımladım 
     public Customer(String customer_name, String customer_surname, String customer_gender, String customer_country, int customer_roomnumber, int customer_age, String customer_uniqueID,int customer_plan,int customer_spendamount) {
-        this.customer_name = customer_name;
-        this.customer_surname = customer_surname;
-        this.customer_gender = customer_gender;
-        this.customer_country = customer_country;
-        this.customer_roomnumber = customer_roomnumber;
-        this.customer_age = customer_age;
-        this.customer_uniqueID = customer_uniqueID;
-        this.customer_plan=customer_plan;
-        this.customer_spendamount=customer_spendamount;
+        this.customer_name = customer_name;   //müşterinin ismi
+        this.customer_surname = customer_surname;   //müşterinin soyadı
+        this.customer_gender = customer_gender;    //müşterinin cinsiyeti
+        this.customer_country = customer_country;   //müşterinin ülkesi
+        this.customer_roomnumber = customer_roomnumber;   //müşterinin oda numarası
+        this.customer_age = customer_age;                 //müşterinin yaşı
+        this.customer_uniqueID = customer_uniqueID;       //müşterinin ID si
+        this.customer_plan=customer_plan;                 //müşterinin her şey dahil mi değil mi planı
+        this.customer_spendamount=customer_spendamount;   //müşterinin ödemesi gerekn para
     }
 
 
-
+        //değişlenlerime başka bir classtan ulaşmak için getter ve setter kullandım geri dönüş yapılı methodlarda returnladım..
     public String getCustomer_name() {
         return customer_name;
     }
