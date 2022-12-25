@@ -1,1 +1,1 @@
-# oteluygulamas-1
+# HotelApp
