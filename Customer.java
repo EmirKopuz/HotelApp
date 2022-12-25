@@ -3,6 +3,7 @@ public class Customer{
     private  int customer_roomnumber, customer_age,customer_plan,customer_spendamount;
     //değişkenlerimi private olarak tanımladım 
     public Customer(String customer_name, String customer_surname, String customer_gender, String customer_country, int customer_roomnumber, int customer_age, String customer_uniqueID,int customer_plan,int customer_spendamount) {
+       // customer tipinde nesne üretmek için
         this.customer_name = customer_name;   //müşterinin ismi
         this.customer_surname = customer_surname;   //müşterinin soyadı
         this.customer_gender = customer_gender;    //müşterinin cinsiyeti
