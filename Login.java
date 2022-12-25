@@ -20,7 +20,7 @@ public class Login extends DbConnection {
                 System.out.println("Giriş Başarılı..\n");
                 System.out.println("Hoş geldin "+ customers.get(i).getCustomer_name());
                 customer_id=i;
-                customerManager.customerMenu();// buraya ne yazmak lazım
+                customerManager.customerMenu();// customerManager adından bir nesne var bu nesneyi kullanarak müşteri menüşüne yönlendiriyoruz
             }
 
         }
@@ -43,7 +43,7 @@ public class Login extends DbConnection {
                     System.out.println("Hoş geldiniz " + stuffs.get(i).getStuff_name());
 
                     updateTime("entrytime", stuff_username);  //personelimizin giriş saatini databaseye aktardık
-                    stuffManager.stuffRedirect(i); //buraya ne yazmak lazım
+                    stuffManager.stuffRedirect(i); //stuffManager adından bir nesne var bu nesneyi kullanarak müşteri menüşüne yönlendiriyoruzm
                 }
 
             }
@@ -64,7 +64,7 @@ public class Login extends DbConnection {
                     System.out.println("\nGiriş Başarılı\n");
                     System.out.println("Hoş geldiniz " + management.getManager_name());
                     
-                    manager.managerMenu(); //buraya ne yazmak lazım
+                    manager.managerMenu(); //manager adından bir nesne var bu nesneyi kullanarak müşteri menüşüne yönlendiriyoruz
 
                 }
 
